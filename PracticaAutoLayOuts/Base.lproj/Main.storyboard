@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PracticaAutoLayOuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Raiz">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUZ-dh-wj9" userLabel="Contenedor Azul">
+                                <rect key="frame" x="0.0" y="0.0" width="448" height="414"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuarto Frio #68" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXP-Ux-Ljv">
+                                        <rect key="frame" x="112.66666666666667" y="42" width="238.66666666666663" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" red="0.19688532001818482" green="0.23562901633620506" blue="0.5984455958549223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Frio" translatesAutoresizingMaskIntoConstraints="NO" id="8gE-OY-xOa">
+                                        <rect key="frame" x="20" y="92" width="408" height="314"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.60677912488584651" green="0.78255861017180717" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="8gE-OY-xOa" firstAttribute="top" secondItem="lXP-Ux-Ljv" secondAttribute="bottom" constant="8" id="Eu0-Ye-T0v"/>
+                                    <constraint firstAttribute="bottom" secondItem="8gE-OY-xOa" secondAttribute="bottom" constant="8" id="F0n-Sm-tld"/>
+                                    <constraint firstItem="lXP-Ux-Ljv" firstAttribute="centerX" secondItem="QUZ-dh-wj9" secondAttribute="centerX" constant="8" id="Nec-YK-HGO"/>
+                                    <constraint firstItem="8gE-OY-xOa" firstAttribute="leading" secondItem="QUZ-dh-wj9" secondAttribute="leading" constant="20" id="Nzn-tz-vBR"/>
+                                    <constraint firstAttribute="trailing" secondItem="8gE-OY-xOa" secondAttribute="trailing" constant="20" id="Q7I-zO-3FS"/>
+                                    <constraint firstItem="lXP-Ux-Ljv" firstAttribute="top" secondItem="QUZ-dh-wj9" secondAttribute="top" constant="42" id="dEX-we-ZMj"/>
+                                    <constraint firstAttribute="trailing" secondItem="8gE-OY-xOa" secondAttribute="trailing" constant="20" id="pBG-rd-225"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pBG-rd-225"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Q7I-zO-3FS"/>
+                                        <include reference="pBG-rd-225"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U94-fz-zqK" userLabel="Contenedor Rosa">
+                                <rect key="frame" x="448" y="0.0" width="448" height="414"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-2°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHq-Sn-jPa">
+                                        <rect key="frame" x="120.66666666666663" y="147" width="207" height="120"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.5289166059258632" blue="0.99450620543086898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xHq-Sn-jPa" firstAttribute="centerX" secondItem="U94-fz-zqK" secondAttribute="centerX" id="EvN-ch-6qa"/>
+                                    <constraint firstItem="xHq-Sn-jPa" firstAttribute="centerY" secondItem="U94-fz-zqK" secondAttribute="centerY" id="X6W-A8-MkP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QUZ-dh-wj9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AnC-rq-2B7"/>
+                            <constraint firstItem="U94-fz-zqK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AyD-Ih-7sy"/>
+                            <constraint firstItem="U94-fz-zqK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OCJ-zx-Y1O"/>
+                            <constraint firstItem="QUZ-dh-wj9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wto-yf-Pvj"/>
+                            <constraint firstItem="U94-fz-zqK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="YsW-RM-r1T"/>
+                            <constraint firstItem="U94-fz-zqK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="col-5J-rT5"/>
+                            <constraint firstAttribute="bottom" secondItem="QUZ-dh-wj9" secondAttribute="bottom" id="dy5-qd-aTM"/>
+                            <constraint firstItem="U94-fz-zqK" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="kZV-hc-22e"/>
+                            <constraint firstItem="QUZ-dh-wj9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="rs6-ai-dfo"/>
+                            <constraint firstItem="QUZ-dh-wj9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="ums-yQ-ame"/>
+                            <constraint firstItem="U94-fz-zqK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.501116" id="z1K-F1-Et6"/>
+                            <constraint firstAttribute="trailing" secondItem="QUZ-dh-wj9" secondAttribute="trailing" id="zDi-hQ-CJP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dy5-qd-aTM"/>
+                                <exclude reference="ums-yQ-ame"/>
+                                <exclude reference="OCJ-zx-Y1O"/>
+                                <exclude reference="YsW-RM-r1T"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="dy5-qd-aTM"/>
+                                <exclude reference="rs6-ai-dfo"/>
+                                <include reference="ums-yQ-ame"/>
+                                <exclude reference="zDi-hQ-CJP"/>
+                                <exclude reference="AyD-Ih-7sy"/>
+                                <include reference="OCJ-zx-Y1O"/>
+                                <include reference="YsW-RM-r1T"/>
+                                <exclude reference="z1K-F1-Et6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="138.0809595202399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Frio" width="512" height="512"/>
+    </resources>
+</document>
