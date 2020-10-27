@@ -18,40 +18,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUZ-dh-wj9" userLabel="Contenedor Azul">
                                 <rect key="frame" x="0.0" y="0.0" width="448" height="414"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuarto Frio #68" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXP-Ux-Ljv">
-                                        <rect key="frame" x="112.66666666666667" y="42" width="238.66666666666663" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuarto Frio #420" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXP-Ux-Ljv">
+                                        <rect key="frame" x="102.66666666666669" y="42" width="259" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <color key="textColor" red="0.19688532001818482" green="0.23562901633620506" blue="0.5984455958549223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Frio" translatesAutoresizingMaskIntoConstraints="NO" id="8gE-OY-xOa">
-                                        <rect key="frame" x="20" y="92" width="408" height="314"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.60677912488584651" green="0.78255861017180717" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="8gE-OY-xOa" firstAttribute="top" secondItem="lXP-Ux-Ljv" secondAttribute="bottom" constant="8" id="Eu0-Ye-T0v"/>
-                                    <constraint firstAttribute="bottom" secondItem="8gE-OY-xOa" secondAttribute="bottom" constant="8" id="F0n-Sm-tld"/>
                                     <constraint firstItem="lXP-Ux-Ljv" firstAttribute="centerX" secondItem="QUZ-dh-wj9" secondAttribute="centerX" constant="8" id="Nec-YK-HGO"/>
-                                    <constraint firstItem="8gE-OY-xOa" firstAttribute="leading" secondItem="QUZ-dh-wj9" secondAttribute="leading" constant="20" id="Nzn-tz-vBR"/>
-                                    <constraint firstAttribute="trailing" secondItem="8gE-OY-xOa" secondAttribute="trailing" constant="20" id="Q7I-zO-3FS"/>
                                     <constraint firstItem="lXP-Ux-Ljv" firstAttribute="top" secondItem="QUZ-dh-wj9" secondAttribute="top" constant="42" id="dEX-we-ZMj"/>
-                                    <constraint firstAttribute="trailing" secondItem="8gE-OY-xOa" secondAttribute="trailing" constant="20" id="pBG-rd-225"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="pBG-rd-225"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="Q7I-zO-3FS"/>
-                                        <include reference="pBG-rd-225"/>
-                                    </mask>
-                                </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U94-fz-zqK" userLabel="Contenedor Rosa">
-                                <rect key="frame" x="448" y="0.0" width="448" height="414"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U94-fz-zqK" userLabel="Contenedor Rosa">
+                                <rect key="frame" x="446" y="0.0" width="450" height="414"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-2°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHq-Sn-jPa">
                                         <rect key="frame" x="120.66666666666663" y="147" width="207" height="120"/>
@@ -59,11 +40,17 @@
                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="Frio" translatesAutoresizingMaskIntoConstraints="NO" id="8gE-OY-xOa">
+                                        <rect key="frame" x="-330" y="241" width="408" height="314"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5289166059258632" blue="0.99450620543086898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="xHq-Sn-jPa" firstAttribute="centerX" secondItem="U94-fz-zqK" secondAttribute="centerX" id="EvN-ch-6qa"/>
+                                    <constraint firstItem="8gE-OY-xOa" firstAttribute="leading" secondItem="U94-fz-zqK" secondAttribute="leading" constant="-330" id="Q9Q-Wh-SIn"/>
                                     <constraint firstItem="xHq-Sn-jPa" firstAttribute="centerY" secondItem="U94-fz-zqK" secondAttribute="centerY" id="X6W-A8-MkP"/>
+                                    <constraint firstAttribute="bottom" secondItem="8gE-OY-xOa" secondAttribute="bottom" constant="-141" id="q46-6l-UVh"/>
+                                    <constraint firstAttribute="trailing" secondItem="8gE-OY-xOa" secondAttribute="trailing" constant="370" id="qQG-5Y-kP2"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -107,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.40000000000001" y="138.0809595202399"/>
+            <point key="canvasLocation" x="129.91071428571428" y="137.68115942028987"/>
         </scene>
     </scenes>
     <resources>
